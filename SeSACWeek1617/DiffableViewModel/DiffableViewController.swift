@@ -21,13 +21,10 @@ class DiffableViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     
         collectionView.collectionViewLayout = createLayout()
         
         searchBar.delegate = self
-        
-        collectionView.delegate = self
         
         configureDataSource()
 
@@ -40,14 +37,6 @@ class DiffableViewController: UIViewController {
             
         }
    
-    }
-    
-}
-
-extension DiffableViewController: UICollectionViewDelegate {
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-                    
     }
     
 }
